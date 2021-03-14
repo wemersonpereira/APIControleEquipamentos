@@ -16,7 +16,7 @@ namespace APIControleEquipamento.Models
             Equipamentos = new Collection<Equipamento>();
         }
         [Key]
-        public int CautelaId { get; set; }
+        public int Id { get; set; }
         [Required]
         [MaxLength(500)]
         public string Descrição { get; set; }

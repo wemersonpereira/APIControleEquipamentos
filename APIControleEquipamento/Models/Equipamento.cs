@@ -11,7 +11,7 @@ namespace APIControleEquipamento.Models
     public class Equipamento
     {
         [Key]
-        public int EquipamentoId { get; set; }
+        public int Id { get; set; }
         [Required]
         [MaxLength(80)]
         public string TipoEquipamento { get; set; }

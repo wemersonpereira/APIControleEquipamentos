@@ -16,7 +16,7 @@ namespace APIControleEquipamento.Models
             Cautelas = new Collection<Cautela>();
         }
         [Key]
-        public int PessoaId { get; set; }
+        public int Id { get; set; }
         [Required]
         [MaxLength(80)]
         public string TipoPessoa { get; set; }
