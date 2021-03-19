@@ -24,7 +24,5 @@ namespace APIControleEquipamento.Models
         [Required]
         [MaxLength(80)]
         public string NumeroControle { get; set; }
-        public Cautela Cautela { get; set; }
-        public int CautelaId { get; set; }
     }
 }

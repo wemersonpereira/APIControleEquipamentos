@@ -20,10 +20,11 @@ namespace APIControleEquipamento.Models
         [Required]
         [MaxLength(500)]
         public string Descrição { get; set; }
-        [Required]
+        [MaxLength(100)]
+        public string Observacao { get; set; }
         public DateTime DataCadastro { get; set; }
         public ICollection<Equipamento> Equipamentos { get; set; }
-        public Pessoa Pessoa { get; set; }
+        public virtual Pessoa Pessoa { get; set; }
         public int PessoaId { get; set; }
     }
 }
